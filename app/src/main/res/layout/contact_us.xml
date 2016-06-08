@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android1="http://schemas.android.com/apk/res/android"
+                android1:layout_width="match_parent"
+                android1:layout_height="match_parent"
+                android1:background="@color/white"
+                android1:gravity="center|top"
+                android1:padding="20dp">
+
+
+    <LinearLayout
+        android1:id="@+id/lin_call"
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content"
+        android1:gravity="left"
+        android1:orientation="horizontal"
+        android1:padding="20dp">
+
+        <ImageView
+            android1:id="@+id/icon_call"
+            android1:layout_width="70dp"
+            android1:layout_height="70dp"
+            android1:src="@drawable/callphone"/>
+
+        <TextView
+            android1:id="@+id/call"
+            android1:layout_width="wrap_content"
+            android1:layout_height="match_parent"
+            android1:layout_below="@+id/title_contact_us"
+            android1:layout_toRightOf="@id/icon_call"
+            android1:autoLink="phone"
+            android1:gravity="center"
+            android1:paddingLeft="10dp"
+            android1:text="+00 971 50 235 9520"
+            android1:textAppearance="?android:attr/textAppearanceLarge"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android1:id="@+id/lin_email"
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@id/lin_call"
+        android1:gravity="left"
+        android1:padding="20dp">
+
+        <ImageView
+
+            android1:id="@+id/icon_email"
+            android1:layout_width="70dp"
+            android1:layout_height="70dp"
+            android1:layout_below="@id/icon_call"
+            android1:src="@drawable/email"/>
+
+        <TextView
+            android1:layout_width="wrap_content"
+            android1:layout_height="match_parent"
+            android1:autoLink="email"
+            android1:gravity="left|center_vertical"
+            android1:paddingLeft="10dp"
+            android1:text="nehalraza@hotmail.com"
+            android1:textAppearance="?android:attr/textAppearanceMedium"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@id/lin_email"
+        android1:gravity="left"
+        android1:padding="20dp">
+
+        <ImageView
+
+            android1:id="@+id/icon_www"
+            android1:layout_width="70dp"
+            android1:layout_height="70dp"
+            android1:layout_below="@id/icon_call"
+            android1:src="@drawable/www"/>
+
+        <TextView
+            android1:layout_width="wrap_content"
+            android1:layout_height="match_parent"
+            android1:autoLink="web"
+            android1:gravity="left|center_vertical"
+            android1:paddingLeft="10dp"
+            android1:text="www.alsamadgroup.com"
+            android1:textAppearance="?android:attr/textAppearanceMedium"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:alpha=".7"
+        android:background="#000000"
+        android:padding="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"
+        android:background="@color/bgcolor"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:id="@+id/linearLayout_online"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Value For Money :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text_color_grey"
+                />
+
+            <RatingBar
+                android:id="@+id/ratingbar_pricequality"
+                style="@style/StarRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:rating="0"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout_offline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout_online"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Service Quality :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text_color_grey"
+                />
+
+            <RatingBar
+                android:id="@+id/ratingbar_servicequality"
+                style="@style/StarRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:rating="0"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout_offline1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout_offline"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Punctuality:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text_color_grey"
+                />
+
+            <RatingBar
+                android:id="@+id/ratingbar_pickupquality"
+                style="@style/StarRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:rating="0"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout_offline2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout_offline1"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/ratingbar_dropoffquality">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Staff Professionalism :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text_color_grey"
+                    />
+            </ScrollView>
+            <RatingBar
+                android:id="@+id/ratingbar_dropoffquality"
+                style="@style/StarRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:rating="0"/>
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout_offline2"
+            android:background="@drawable/edit_multiline"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="e.g Quick response time"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:textColor="@color/text_medium_blue">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/button_ok"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@+id/linearLayout_offline2"
+            android:layout_below="@+id/editText1"
+            android:layout_marginTop="15dp"
+            android:background="@color/btn_bgcolor"
+            android:text="Ok"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,233 @@
+<RelativeLayout
+    android:id="@+id/main_rel"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView_banner"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="0dp"-->
+    <!--android:background="@drawable/list_row_background1"-->
+    <!--android:scaleType="fitXY" />-->
+
+    <ImageView
+        android:id="@+id/imageView_small_banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/small_banner"
+        android:scaleType="fitXY"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView_small_banner"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="ADDRESS TITLE*"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text_color_grey_dark"/>
+
+            <EditText
+                android:id="@+id/AddressName"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/edit_new_style"
+                android:ems="10"
+                android:hint="e.g HOME,OFFICE"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <!--                 <requestFocus /> -->
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="ADDRESS*"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text_color_grey_dark"/>
+
+            <EditText
+                android:id="@+id/AddressLine1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_new_style"
+                android:ems="10"
+                android:hint="@string/address_hint"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="LANDMARK:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text_color_grey_dark"/>
+
+            <EditText
+                android:id="@+id/AddressLine2"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/edit_new_style"
+                android:ems="10"
+                android:hint="@string/landmark"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="ZIP:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text_color"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/AddressLine3"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/edit_new_style"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:visibility="gone"/>
+
+
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="COUNTRY *"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text_color_grey_dark"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_from_spin">
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="CITY *"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text_color_grey_dark"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_from_spin">
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:hint="Select"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="CONTACT *"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text_color_grey_dark"/>
+
+            <EditText
+                android:id="@+id/ContactNo"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/edit_new_style"
+                android:ems="10"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOTE:Field marked with * are mandatory"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/text_color"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="60dp">
+
+                <Button
+                    android:id="@+id/bt_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="70dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_selector"
+                    android:drawableLeft="@android:drawable/ic_menu_save"
+                    android:gravity="center"
+                    android:text="Save"
+                    android:textColor="@color/button_title_color"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

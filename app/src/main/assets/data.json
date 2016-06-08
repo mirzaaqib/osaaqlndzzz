@@ -1,0 +1,24 @@
+laundry_id=72&user_id=99&cur_lat=28.5452564&cur_long=77.2955455&comment=    Deal Text: Offer: 10% Discount on washing*; 15% Discount on Ironing*; 25% Discount on order above 400 AEDrnOffer: 25 AED discount for first time user, 15% Discount on order above 400 AED, 10% Discount on ladies garmentsrn&LaundryOrderDate=2016-01-30 10: 25: 18&pick_up_id=64&drop_off_id=64&orders=
+
+[
+{
+"LaundryServiceID": "6",
+"LaundryItemID": "2",
+"Amount": "4.00",
+"Quantity": "4"
+}
+,
+{
+"LaundryServiceID": "6",
+"LaundryItemID": "1",
+"Amount": "4.00",
+"Quantity": "3"
+}
+,
+{
+"LaundryServiceID": "3",
+"LaundryItemID": "5",
+"Amount": "12.00",
+"Quantity": "4"
+  }
+]

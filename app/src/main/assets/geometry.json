@@ -1,0 +1,67 @@
+{
+  "results": [
+    {
+      "address_components": [
+        {
+          "long_name": "Abu Dhabi",
+          "short_name": "Abu Dhabi",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Abu Dhabi",
+          "short_name": "Abu Dhabi",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United Arab Emirates",
+          "short_name": "AE",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ],
+      "formatted_address": "Abu Dhabi - Abu Dhabi - United Arab Emirates",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 24.6213301,
+            "lng": 54.8509598
+          },
+          "southwest": {
+            "lat": 24.1517661,
+            "lng": 54.268856
+          }
+        },
+        "location": {
+          "lat": 24.2991738,
+          "lng": 54.6972774
+        },
+        "location_type": "APPROXIMATE",
+        "viewport": {
+          "northeast": {
+            "lat": 24.6213301,
+            "lng": 54.8509598
+          },
+          "southwest": {
+            "lat": 24.1517661,
+            "lng": 54.268856
+          }
+        }
+      },
+      "partial_match": true,
+      "place_id": "ChIJufI-cg9EXj4RCBGXQZMuzMc",
+      "types": [
+        "locality",
+        "political"
+      ]
+    }
+  ],
+  "status": "OK"
+}

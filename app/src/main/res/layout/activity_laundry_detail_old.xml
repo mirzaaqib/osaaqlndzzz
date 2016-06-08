@@ -1,0 +1,337 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgcolor">
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView3"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <HorizontalScrollView
+
+                    android:id="@+id/scroll_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/button_rate">
+                    <TextView
+                        android:id="@+id/textView_laundry_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:paddingRight="20dp"
+                        android:text="Laundry Name"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                </HorizontalScrollView>
+                <TextView
+                    android:id="@+id/textView_laundry_review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/scroll_name"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Reviews"
+                    android:textColor="@color/text_color"
+                    android:textSize="13sp"/>
+
+                <Button
+                    android:id="@+id/button_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_selector"
+                    android:padding="2dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/textView_laundry_vote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView_laundry_review"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/button_rate"
+                    android:layout_marginRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text=" Votes"
+                    android:textColor="@color/text_color"
+                    android:textSize="13sp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_callfavweb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@color/btn_bgcolor"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <LinearLayout
+                    android:id="@+id/lay_call"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/first"/>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/call"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_bookmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton_bookmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/second"/>
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/favourite"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+
+                        android:id="@+id/imageButton_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/third"
+                        android:onClick="ratePopup"/>
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/rate"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/but_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lin_callfavweb"
+                android:background="@null"
+                android:onClick="expand">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/dark_grey"/>
+
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/circle_accent"
+                    android:onClick="expand"
+                    android:src="@android:drawable/arrow_down_float"/>
+
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_selector_expand"
+                    android:drawableLeft="@drawable/services_iron"
+                    android:drawablePadding="5dp"
+                    android:onClick="expand"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:text="SERVICES"
+                    android:textColor="@color/btn_bgcolor_dark"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/expandableLayout_rel_laundrydetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/but_expand"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/text_timing_ldetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TIMING  :"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/text_timing_ldetail_showtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_timing_ldetail"
+                    android:layout_toRightOf="@+id/text_timing_ldetail_service"
+                    android:text=":"
+                    />
+
+
+                <TextView
+                    android:id="@+id/text_timing_ldetail_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_timing_ldetail_data"
+                    android:text="SERVICES: "
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/text_timing_ldetail_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_timing_ldetail"
+                    android:layout_toRightOf="@id/text_timing_ldetail_service"
+                    android:text=""/>
+
+
+                <TextView
+                    android:id="@+id/textView_service_ldetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_timing_ldetail_service"
+                    android:layout_toRightOf="@+id/text_timing_ldetail_service"
+                    android:text="No Service"/>
+
+                <TextView
+                    android:id="@+id/textView_servicelable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView_service_ldetail"
+                    android:text="\nSERVICES AREA :"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textView_servicearea_ldetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_servicelable"
+                    android:layout_toRightOf="@+id/text_timing_ldetail_service"
+                    android:text="No Area"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_address_laundry_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/expandableLayout_rel_laundrydetail"
+                android:layout_margin="10dp"
+                android:background="@drawable/edit_multiline"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/darkest_grey"/>
+
+
+        </RelativeLayout>
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_marginTop="10dp"/>
+
+
+        <Button
+            android:id="@+id/button_pick_up_request"
+            android:layout_width="140dp"
+            android:layout_height="@dimen/btn_height"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/map"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_selector"
+            android:drawableLeft="@drawable/pickup"
+            android:padding="5dp"
+            android:text="@string/pickuprequest"
+            android:textColor="#ffffff"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="140dp"
+            android:layout_height="@dimen/btn_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/button_pick_up_request"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_selector"
+            android:drawableLeft="@drawable/dollar"
+            android:padding="5dp"
+            android:text="@string/ratecard"
+            android:textColor="#ffffff"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+</ScrollView>

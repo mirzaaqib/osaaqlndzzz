@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_buttonstyle"
+                android:padding="10dp">
+    <TextView
+        android:id="@+id/alpha"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/percent"
+        android:gravity="center"
+        android:text="B"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/laundry_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_toRightOf="@+id/alpha"
+        android:maxLines="1"
+        android:text="@string/laundryname"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/darkest_grey"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/laundry_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/laundry_name"
+        android:layout_toRightOf="@+id/alpha"
+        android:maxLines="1"
+        android:text="Laundry Address"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/dark_grey"/>
+
+    <TextView
+        android:id="@+id/laundry_offer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/laundry_address"
+        android:layout_toRightOf="@+id/alpha"
+        android:maxLines="1"
+        android:text="Laundry Offer"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/text_medium_blue"/>
+
+    <TextView
+        android:id="@+id/laundry_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/laundry_offer"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone"/>
+
+</RelativeLayout>

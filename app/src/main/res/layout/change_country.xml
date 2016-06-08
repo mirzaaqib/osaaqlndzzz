@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="15dp">
+    <TextView
+        android:id="@+id/label_description_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="You can change profile country and city from here."
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <TextView
+        android:id="@+id/label_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_description_change"
+        android:padding="8dp"
+        android:text="Select Country"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <LinearLayout
+        android:id="@+id/lin_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_country"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/spin_back_change">
+        <Spinner
+            android:id="@+id/spinner_country_change_country"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/label_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_country"
+        android:padding="8dp"
+        android:text="Select City"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/lin_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_city"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/spin_back_change"
+        android:visibility="visible">
+        <Spinner
+            android:id="@+id/spinner_country_change_city"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/submit_changecountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_city"
+        android:background="@drawable/button_selector"
+        android:onClick="submitChangeCountry"
+        android:text="SUBMIT"
+        android:textColor="@color/white"/>
+</RelativeLayout>

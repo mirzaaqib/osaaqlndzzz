@@ -1,0 +1,47 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:background="@color/bgcolor_heading"
+      tools:context="com.example.actionbar.MainActivity">
+
+
+    <!--<item android:id="@id/icon"-->
+    <!--android:title="icon"-->
+    <!--android:icon="@drawable/icon"-->
+    <!--app:showAsAction="always"/>-->
+    <item
+        android:id="@+id/action_search"
+        android:layout_width="fill_parent"
+        android:background="@color/bgcolor_heading"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search For"
+        app:showAsAction="always"/>
+
+    <!--<item-->
+    <!--android:id="@+id/direct_to_home"-->
+    <!--android:icon="@drawable/home"-->
+    <!--android:title="Home"-->
+    <!--android:visible="true"-->
+    <!--app:showAsAction="always"/>-->
+    <item
+        android:id="@+id/cities"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Select City"
+        android:visible="true"
+        app:showAsAction="always"/>
+
+
+    <!--<item-->
+    <!--android:id="@+id/city_list"-->
+    <!--android:icon="@drawable/dots"-->
+    <!--app:showAsAction="always">-->
+    <!--<menu>-->
+    <!--<item android:id="@+id/city1"-->
+    <!--android:title="Dubai"-->
+    <!--app:showAsAction="never" />-->
+    <!--<item android:id="@+id/city2"-->
+    <!--android:title="Soudi"-->
+    <!--app:showAsAction="never" />-->
+    <!--</menu>-->
+    <!--</item>-->
+</menu>

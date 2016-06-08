@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+    >
+    <RelativeLayout
+        android:id="@+id/rel_adview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        >
+        <ImageView
+            android:id="@+id/image_advertisement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/splash_back"/>
+        <TextView
+            android:id="@+id/text_advertisement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_advertisement"
+            android:background="#aaffffff"
+            android:gravity="bottom|center"
+            android:padding="15dp"
+            android:text="You recieved a new offer!"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_toEndOf="@+id/rel_adview"
+        android:layout_toLeftOf="@+id/rel_adview"
+        android:layout_toRightOf="@+id/rel_adview"
+        android:layout_toStartOf="@+id/rel_adview"
+        android:background="@drawable/back_adview">
+    </RelativeLayout>
+    <Button
+        android:id="@+id/button_advertisement"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/closebutton"
+        android:scaleType="fitXY"/>
+
+
+</RelativeLayout>

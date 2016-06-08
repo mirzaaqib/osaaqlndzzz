@@ -1,0 +1,89 @@
+<ScrollView
+    android:id="@+id/scrollView1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/spot_mylaundry"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/text_dark_blue"
+            android:textStyle="bold"/>
+
+        <TextView
+
+            android:id="@+id/textView_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/version"
+            android:textColor="@color/text_medium_blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="monospace"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_ico_high"/>
+
+        <com.bluejamesbond.text.DocumentView
+            android:id="@+id/text_aboutus_justified"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:documentView_text="@string/user_agree"
+            app:documentView_textSize="18dp"
+            app:documentView_wordSpacingMultiplier="2.0"/>
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView_about"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="@string/about"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="18sp" />-->
+
+
+        <TextView
+            android:id="@+id/textView_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="@string/terms_ofuse"
+            android:textColor="@color/bgcolor_heading"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/textView_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/bgcolor_heading"
+            android:textSize="@dimen/text_large"
+            android:textStyle="normal"/>
+    </LinearLayout>
+
+</ScrollView>

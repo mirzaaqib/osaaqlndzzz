@@ -1,0 +1,52 @@
+{
+  "status": 200,
+  "stauts_message": "Record Fetched",
+  "data": [
+    {
+      "totalreviews": "2",
+      "totalratings": null,
+      "avgratings": "3.7500000000",
+      "LaundryID": "90",
+      "LaundryName": "Beesan Laundry",
+      "LaundryAddress": "Behind Texas Chicken , Airport Road -Abu Dhabi",
+      "LaundryCity": "Abu Dhabi",
+      "LaundryState": null,
+      "LaundryCountry": "",
+      "LaundryZipCode": "",
+      "LaundryOwner": "Nehal",
+      "LaundryServiceArea": "",
+      "LaundryPhone1": "026332323",
+      "LaundryPhone2": "",
+      "LaundryMobile1": "0525968010",
+      "LaundryMobile2": "",
+      "LaundryCallPrefernce": "026332323",
+      "LaundryEmail": "beesanlaundry@gmail.com",
+      "LaundryWebsite": "",
+      "LaundryImage": "http://laundry.znsoftech.com/yii/uploads/laundry/IMG_20151119031136_Burjeel Laundry.jpg",
+      "LaundryLat": "24.4724240000",
+      "LaundryLong": "54.3676660000",
+      "CreatedBy": "admin",
+      "CreatedOn": "2015-11-19",
+      "ModifiedOn": "2015-11-19 03:48:28",
+      "IsActive": "1",
+      "total_ratings": "2",
+      "total_reviews": "2",
+      "rating_sum": "30.00",
+      "LaundryWorking": "All Days From :08:00 To 23:00 Hrs",
+      "Services": [
+        {
+          "LaundryServiceName": "Washing"
+        },
+        {
+          "LaundryServiceName": "Ironing"
+        },
+        {
+          "LaundryServiceName": "Dry Clean + Ironing"
+        },
+        {
+          "LaundryServiceName": "Washing + Ironing"
+        }
+      ]
+    }
+  ]
+}

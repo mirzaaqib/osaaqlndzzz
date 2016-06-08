@@ -1,0 +1,27 @@
+{
+  "status": 200,
+  "stauts_message": "User validated successfully",
+  "data": [
+    {
+      "UserID": "204",
+      "Name": "SAMAR SABIR",
+      "Email": "khan.sabir1992@gmail.com",
+      "Password": "123456",
+      "random_number": null,
+      "Phone": "",
+      "Mobile": "0506664457",
+      "Address": "Dubai ",
+      "City": "Abu Dhabi",
+      "State": "",
+      "Country": "United Arab Emirates",
+      "Zipcode": "",
+      "UserType": "",
+      "Latitude": "25.2048493",
+      "Longitude": "55.2707828",
+      "CreatedBy": "",
+      "CreatedOn": "2015-12-08",
+      "ModifiedOn": "0000-00-00",
+      "RegIP": "fe80::56a0:50ff:fec6:637d%wlan0"
+    }
+  ]
+}

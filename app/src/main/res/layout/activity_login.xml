@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/splash_back"
+                android:gravity="center"
+                android:padding="20dp"
+                android:paddingBottom="50dp">
+
+    <ImageView
+        android:id="@+id/image_icon_login"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_ico_high"/>
+
+    <TextView
+        android:id="@+id/textview_login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_icon_login"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="SPOT MY LAUNDRY"
+        android:textColor="@color/btn_bgcolor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="sans"/>
+
+    <EditText
+        android:id="@+id/editText_username"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textview_login_title"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_textplain_round"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/emailaddress"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:textColor="@color/edit_text_text"
+        android:textColorHint="@color/hint_color"/>
+
+    <EditText
+        android:id="@+id/EditText_password"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/editText_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_textplain_round"
+        android:drawableLeft="@drawable/keys"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:textColor="@color/edit_text_text"
+        android:textColorHint="@color/hint_color"/>
+
+    <Button
+        android:id="@+id/but_submit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/EditText_password"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_selector"
+        android:text="@string/signin"
+        android:textColor="@color/button_title_color"/>
+
+
+    <CheckBox
+        android:id="@+id/imageView_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/but_submit"
+        android:padding="5dp"
+        android:text="@string/rememberme"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/but_submit"
+        android:clickable="true"
+        android:enabled="true"
+        android:onClick="forget_password"
+        android:padding="5dp"
+        android:text="Forgot password?"
+        android:textColor="#0000ff"/>
+
+
+    <TextView
+        android:id="@+id/textView_new_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/imageView_remember"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:padding="10dp"
+        android:text="@string/newuser"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"/>
+</RelativeLayout>

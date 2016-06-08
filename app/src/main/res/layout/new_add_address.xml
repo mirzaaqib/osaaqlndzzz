@@ -1,0 +1,42 @@
+<RelativeLayout
+    android:id="@+id/main_rel"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ListView
+        android:id="@+id/listView_laundry1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rel_bot_button"
+        android:layout_below="@+id/imageView_banner"
+        android:layout_marginTop="2dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rel_bot_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#aaffffff"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/button_selector"
+            android:drawableLeft="@android:drawable/ic_input_add"
+            android:paddingRight="10dp"
+            android:text="Add Address"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

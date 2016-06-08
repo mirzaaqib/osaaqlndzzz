@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:background="@color/bgcolor_heading">
+
+
+    <item
+        android:id="@+id/direct_to_home"
+        android:icon="@mipmap/ic_launch_new"
+        android:title="Home"
+        android:visible="true"
+        app:showAsAction="always"/>
+
+</menu>

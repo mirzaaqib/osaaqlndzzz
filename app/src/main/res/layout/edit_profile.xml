@@ -1,0 +1,220 @@
+<ScrollView
+    android:id="@+id/scrollView1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_back"
+    android:padding="10dp"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/e_name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/edittextpurewhite"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="@color/edit_text_text"
+            android:textColorHint="@color/hint_color"/>
+
+        <EditText
+
+            android:id="@+id/e_email"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/e_name"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextpurewhite"
+            android:drawableLeft="@drawable/link"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="@color/edit_text_text"
+            android:textColorHint="@color/hint_color"/>
+
+        <EditText
+            android:id="@+id/e_password"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/e_email"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextpurewhite"
+            android:drawableLeft="@drawable/keys"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="@color/edit_text_text"
+            android:textColorHint="@color/hint_color"/>
+
+        <EditText
+            android:id="@+id/e_password_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/e_password"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextpurewhite"
+            android:drawableLeft="@drawable/keys"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="@color/edit_text_text"
+            android:textColorHint="@color/hint_color"/>
+
+        <RelativeLayout
+            android:id="@+id/rel_spinner"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/e_password_confirm"
+            android:layout_marginTop="10dp">
+
+            <Spinner
+                android:id="@+id/spinner_operator"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/edittextpurewhite"
+                android:paddingRight="35dp"/>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/dwnbtn"/>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/e_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/e_password_confirm"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/rel_spinner"
+            android:background="@drawable/edittextpurewhite"
+            android:drawableLeft="@drawable/gly_iphone"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="@string/mobile"
+            android:inputType="phone"
+            android:maxLength="8"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="@color/edit_text_text"
+            android:textColorHint="@color/hint_color"/>
+
+        <EditText
+            android:id="@+id/e_phone"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/e_mobile"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextpurewhite"
+            android:drawableLeft="@drawable/gly_phone_alt"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:maxLength="8"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="@color/edit_text_text"
+            android:textColorHint="@color/hint_color"/>
+
+        <EditText
+            android:id="@+id/e_address"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/e_phone"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextpurewhite"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="@string/address_small"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:scrollHorizontally="false"
+            android:textColor="@color/edit_text_text"
+            android:textColorHint="@color/hint_color"/>
+
+        <EditText
+
+            android:id="@+id/e_country"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/spinner_city"
+            android:layout_alignRight="@+id/spinner_city"
+            android:layout_below="@+id/e_address"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextpurewhite"
+            android:editable="false"
+            android:ems="10"
+            android:hint="@string/country"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:text="United Arab Emirates"
+            android:textColor="@color/edit_text_text"
+            android:textColorHint="@color/hint_color"/>
+
+        <Spinner
+            android:id="@+id/spinner_city"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/e_address"
+            android:layout_alignRight="@+id/e_address"
+            android:layout_below="@+id/e_country"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextpurewhite"
+            android:paddingRight="35dp"/>
+
+
+        <Button
+
+            android:id="@+id/but_register"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/e_country"
+            android:layout_below="@+id/spinner_city"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_selector"
+            android:text="@string/signup"
+            android:textColor="@color/button_title_color"/>
+
+        <TextView
+            android:id="@+id/TextView033"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_below="@+id/but_register"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/text_view"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <!--<TextView-->
+    <!--android:background="@color/btn_bgcolor_dark"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:padding="5dp"-->
+    <!--android:textStyle="bold"-->
+    <!--android:textSize="22sp"-->
+    <!--android:id="@+id/deal_laundry_name"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <RelativeLayout
+        android:id="@+id/rel_header_deals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/deal_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/deal_image"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/laundry"/>
+
+        <TextView
+            android:id="@+id/deal_text_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/bg_deal_title"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="FIRST DEAL"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/deal_text_laundry_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_header_deals"
+        android:layout_margin="5dp"
+        android:text="Dubai Laundry"
+        android:textAllCaps="true"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/lin_addressservicearea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deal_text_laundry_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edit_multiline"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Laundry Address : "
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/deal_text_laundry_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Dubai, \nStreet 32a, \nAl Qusais 1, \nAl Ras, Deira"
+            android:textColor="@color/material_blue_grey_800"
+            android:typeface="monospace"/>
+        <TextView
+            android:id="@+id/deal_servicearea_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deal_text_caption"
+            android:text="Service Area : "
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/deal_servicearea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deal_servicearea_label"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text=""
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/deal_text_caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_addressservicearea"
+        android:background="@color/alfa_white"
+        android:padding="5dp"
+        android:text="We are offering 10% free on any costume.\n40% on mens\n50%on women's constume"
+        android:textColor="@color/black"/>
+
+
+    <fragment
+        android:id="@+id/deal_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_above="@+id/but_claimorder"
+        android:layout_below="@+id/deal_text_caption"
+        />
+    <Button
+        android:id="@+id/but_claimorder"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_selector"
+        android:drawableLeft="@drawable/claiimdeal"
+        android:onClick="claimOrder"
+        android:padding="5dp"
+        android:text="CLAIM DEAL"
+        android:textColor="@color/white"/>
+</RelativeLayout>

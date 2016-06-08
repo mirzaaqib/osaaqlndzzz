@@ -1,0 +1,88 @@
+<RelativeLayout
+    android:id="@+id/main_rel"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView_banner"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="0dp"-->
+    <!--android:background="@drawable/list_row_background1"-->
+    <!--android:scaleType="fitXY" />-->
+    <ListView
+        android:id="@+id/listView1_men"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView_small_banner"
+        android:layout_alignParentTop="true"
+        android:background="@color/bgcolor"
+        android:textColor="@color/text_color"/>
+
+    <ImageView
+        android:id="@+id/imageView_small_banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/small_banner"
+        android:scaleType="fitXY"/>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/imageView_banner"-->
+    <!--android:background="@color/btn_bgcolor"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:paddingLeft="15dp"-->
+    <!--android:paddingRight="10dp"-->
+    <!--android:paddingTop="5dp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView1"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="6"-->
+    <!--android:gravity="left"-->
+    <!--android:text="@string/date"-->
+    <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--android:textColor="@color/white"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView2"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="6"-->
+    <!--android:gravity="left"-->
+    <!--android:text="@string/orderid"-->
+    <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--android:textColor="@color/white"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView3"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="6"-->
+    <!--android:gravity="left"-->
+    <!--android:text="@string/amount"-->
+    <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--android:textColor="@color/white"/>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imgView3"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="end"-->
+    <!--android:src="@drawable/ic_action_arrow"-->
+    <!--android:visibility="invisible"/>-->
+
+    <!--</LinearLayout>-->
+
+
+</RelativeLayout>

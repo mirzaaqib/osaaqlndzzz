@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Spot My Laundry</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>My Profile</item>
+        <item>My Orders</item>
+        <item>My Addresses</item>
+        <item>Change Country</item>
+        <item>Rate Us</item>
+        <item>Share With Friends</item>
+        <item>Report Issues</item>
+        <item>Contact Us</item>
+        <item>About Us</item>
+        <item>User Agreement</item>
+        <item>Sign Out</item>
+    </string-array>
+
+    <string name="formatted"><![CDATA[
+    <p style="bgcolor:red;">This is a html-formatted string with <b>bold</b> and <i>italic</i> text</p>
+    <p>This is another paragraph of the same string.</p>
+    ]]></string>
+    <string-array name="operator_items">
+        <item>050</item>
+        <item>052</item>
+        <item>055</item>
+        <item>056</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/home_new</item>
+        <item>@drawable/user_list</item>
+        <item>@drawable/my_order</item>
+        <item>@drawable/manage_accounts</item>
+        <item>@mipmap/ic_change_country</item>
+        <item>@drawable/rating_star</item>
+        <item>@drawable/refer_earn</item>
+        <item>@drawable/reppert_issue</item>
+        <item>@drawable/contact_us</item>
+        <item>@drawable/about_us</item>
+        <item>@drawable/user_agreement</item>
+        <item>@drawable/sign_out</item>
+    </array>
+
+    <string name="desc_list_item_icon">Item Icon</string>
+    <!-- <string name="login_text1">Sign in for free & listen to</string> -->
+
+
+    <string name="about">"An easy way to discover laundries or dry clean services near you.
+        Additionaly you can look for offers from third party merchants too."
+    </string>
+
+
+    <!-- <string name="about">"Welcome to Alsamad Group! -->
+
+    <!-- A Name which has carved out a niche for itself in the Web Industry! A pioneer in the area of IT solutions, Alsamad Group offers a wide spectrum of services including Website Design, development, Web application development. The company is 100 percent customer-driven and fully committed to offer advanced IT expertise and cutting-edge software solutions."</string> -->
+
+    <string name="network_title">""</string>
+    <string name="network_message">"Unable to connect, Please check your network connection."
+    </string>
+    <!--30th july 2015 Sandeep Rana-->
+    <string name="quality">QUANTITY</string>
+    <string name="spot_mylaundry">SPOT MY LAUNDRY</string>
+    <string name="version">Version 1.0</string>
+    <string name="privacy_policy">PRIVACY POLICY</string>
+    <string name="terms_ofuse">TERMS OF USE</string>
+    <string name="item">ITEM</string>
+    <string name="service">SERVICE</string>
+    <string name="add">ADD</string>
+    <string name="item_tab">ITEM</string>
+    <string name="rate">RATE</string>
+    <string name="amt">AMT</string>
+    <string name="qty">QTY</string>
+    <string name="submit">SUBMIT</string>
+    <string name="call">CALL</string>
+    <string name="pickuprequest">PICK UP REQUEST</string>
+    <string name="ratecard">RATE CARD</string>
+    <string name="emailaddress">Email Address</string>
+    <string name="password">Password</string>
+    <string name="signin">SIGN IN</string>
+    <string name="rememberme">Remember Me</string>
+    <string name="newuser">NEW USER</string>
+    <string name="name">Name</string>
+    <string name="email">Email Address</string>
+    <string name="confirmemailaddress">Confirm Email Address</string>
+    <string name="mobile">Mobile</string>
+    <string name="phone">Phone</string>
+    <string name="address_small">Address</string>
+    <string name="signup">SIGN UP</string>
+    <string name="country">Country</string>
+    <string name="dealsfromlaunddry">Deals From Laundry</string>
+    <string name="laundryname">Laundry Name</string>
+    <string name="dhs">DHS</string>
+    <string name="date">DATE</string>
+    <string name="orderid">ORDER ID</string>
+    <string name="amount">AMOUNT</string>
+
+    <!-- Mohsin Bhai-->
+    <string name="light_grey">#57dde8f4</string>
+    <string name="color_invoice_text">#2192b0</string>
+    <string name="contact_us">CONTACT US</string>
+    <string name="user_agree">Copyright © 2015, Nazish Ahsan , contact me :
+        nazish.ahsan@znsoftech.com This application is free; you can share it and it under the terms
+        of the GNU General Public License as published by the Free Application Foundation either
+        version 1.0 of the License.Dummy text is also used to demonstrate the appearance of
+        different typefaces and layouts, and in general the content of dummy text is nonsensical.
+        Due to its widespread use as filler text for layouts, non-readability is of great
+        importance: human perception is tuned to recognize certain patterns and repetitions in
+        texts. If the distribution of letters and \'words\' is random, the reader will not be
+        distracted from making a neutral judgement on the visual impact and readability of the
+        typefaces (typography), or the distribution of text on the page (layout or type area). For
+        this reason, dummy text usually consists of a more or less random series of words or
+        syllables. This prevents repetitive patterns from impairing the overall visual impression
+        and facilitates the comparison of different typefaces. Furthermore, it is advantageous when
+        the dummy text is relatively realistic so that the layout impression of the final
+        publication is not compromised.
+    </string>
+
+    <!-- Mohsin Bhai-->
+    <string name="ok">OK</string>
+    <string name="action_bar_color">#004765</string>
+    <string name="terms_of_use">Terms Of Use</string>
+
+    <!--03-08-2015 -->
+    <string name="edit_address">Edit Address</string>
+    <string name="loading">Loading...</string>
+    <string name="saving">Saving...</string>
+    <string name="updating">Updating...</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="saved">Saved!</string>
+    <string name="update_successfully">Updated successfully.</string>
+    <string name="enter_address_title">Enter Address Title!</string>
+    <string name="enter_correct_address">Enter correct Address!</string>
+    <string name="enter_correct_contact">Enter correct contact!</string>
+    <string name="choose_one">Choose one</string>
+    <string name="report_issue_subject">Error in Laundry App</string>
+    <string name="report_issue_mail_id">nihalraza@hotmail.com</string>
+    <string name="share_with_friends_text">Check out Spot My Laundry for your smartphone to get
+        laundry service at your doorstep at
+    </string>
+    <string name="rate_card">Rate Card</string>
+    <string name="privacy_policy_bar_text">Privacy Policy</string>
+    <string name="color_address_edit">#ff208da9</string>
+    <string name="address_hint">e.g POCKET 2 ,JASOLA,DELHI,INDIA</string>
+    <string name="landmark">e.g near Mother Dairy</string>
+
+    <!-- 05-08-2015-->
+    <string name="user_agreement">User Agreement</string>
+    <!-- 06-08-2015 -->
+    <string name="too_much_quantity">Too much Quantity.</string>
+    <string name="fill_order_details">Fill Order Details</string>
+    <string name="please_add_quantity">Please add Quantity.</string>
+    <string name="add_address">Add Address</string>
+    <string name="color_filledstar">#f1c40f</string>
+    <string name="color_emptystar">#77000000</string>
+    <string name="placeorder">PLACE ORDER</string>
+    <string name="web">WEB</string>
+    <string name="favourite">FAVOURITE</string>
+    <string name="title_activity_dialog_custom">Rate</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detailed_deal">DetailedDeal</string>
+    <string name="title_activity_deals_intermediate">DealsIntermediateActivity</string>
+</resources>

@@ -1,0 +1,136 @@
+<RelativeLayout
+    android:id="@+id/main_rel"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/bgcolor"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/search_icon"/>
+
+    </LinearLayout>
+
+    <ImageView
+
+        android:id="@+id/imageView_banner"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/search_layout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/list_row_background1"
+        android:scaleType="fitXY"/>
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/offerType"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/imageView_banner"-->
+    <!--android:background="@color/bgcolor"-->
+    <!--android:paddingBottom="1dp"-->
+    <!--android:paddingTop="5dp">-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/header_ll"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/bgcolor"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center|right"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="2dp"-->
+    <!--android:text="Latest Offers"-->
+
+    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+    <!--android:textColor="@color/black"-->
+
+    <!--/>-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--</RelativeLayout>-->
+
+    <ProgressBar
+        android:id="@+id/gridhomeprogress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_banner"
+        android:layout_marginTop="50dp"
+        android:visibility="visible"/>
+    <GridView
+        android:id="@+id/gridview_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/imageView_small_banner"
+        android:layout_below="@+id/imageView_banner"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:horizontalSpacing="3dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="3dp"
+        >
+    </GridView>
+    <!--<ListView-->
+    <!--android:id="@+id/listView_laundry"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_above="@+id/imageView_small_banner"-->
+    <!--android:layout_below="@+id/offerType"-->
+    <!--android:layout_marginTop="2dp"-->
+    <!--android:divider="#00000000"-->
+    <!--android:dividerHeight="1dp">-->
+    <!--</ListView>-->
+
+    <ImageView
+        android:id="@+id/imageView_small_banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/small_banner"
+        android:scaleType="fitXY"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

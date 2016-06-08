@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:background="@color/bgcolor_heading"
+      tools:context="com.example.actionbar.MainActivity">
+
+
+    <item
+        android:id="@+id/edt_mySearch"
+        android:title="My Music"
+        app:actionLayout="@layout/search_bar"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/direct_to_home"
+        android:icon="@mipmap/ic_launch_new"
+        android:title="Home"
+        android:visible="true"
+        app:showAsAction="always"/>
+    <!--<item-->
+    <!--android:id="@+id/cities"-->
+    <!--android:title="Select City"-->
+    <!--android:visible="true"-->
+    <!--android:icon="@android:drawable/ic_menu_myplaces"-->
+    <!--app:showAsAction="always"-->
+    <!--/>-->
+
+
+</menu>

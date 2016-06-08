@@ -1,0 +1,279 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bgcolor">
+
+    <TextView
+        android:id="@+id/textView_laundry_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:background="#004765"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="ABCD Laundry In UAE"
+        android:textAllCaps="true"
+        android:textColor="@color/text_view"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_laundry_name"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_laundry_name"
+            android:layout_marginTop="7dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/item"
+                android:textColor="@color/text_color"
+                android:textSize="14sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_laundry"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/edittextstyle"
+                android:paddingRight="35dp"/>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/dwnbtn"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_laundry_name"
+
+            android:layout_marginTop="7dp">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/service"
+                android:textColor="@color/text_color"
+                android:textSize="14sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_laundry2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/edittextstyle"
+                android:paddingRight="35dp"/>
+
+            <ImageView
+                android:id="@+id/imageView111"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/dwnbtn"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_laundry_name"
+            android:layout_marginTop="7dp">
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/quality"
+                android:textColor="@color/text_color"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/spinner_laundry3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/edittextstyle"
+                android:ems="10"
+                android:inputType="number"
+                android:paddingLeft="34dp"
+                android:paddingRight="35dp"
+                android:text="1"/>
+
+            <ImageView
+                android:id="@+id/imageView121"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/minus"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/spinner_laundry3"
+                android:layout_centerVertical="true"
+                android:src="@drawable/plus"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/button_selector"
+            android:drawableLeft="@android:drawable/ic_input_add"
+            android:gravity="left|center"
+
+            android:paddingLeft="10dp"
+            android:text="@string/add"
+            android:textColor="@color/button_title_color"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:background="#004765">
+
+        <TextView
+            android:id="@+id/textView_number"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="#004765"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@+id/imageView_cross"
+            android:layout_toRightOf="@+id/textView_number"
+            android:background="@color/bgcolor_heading">
+
+            <TextView
+                android:id="@+id/textView_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/item"
+                android:textColor="@color/white"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/textView_service"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/service"
+                android:textColor="@color/white"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/textView_dhs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/rate"
+                android:textColor="@color/white"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/textView_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/qty"
+                android:textColor="@color/white"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/textView_amnt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/amt"
+                android:textColor="@color/white"
+                android:textSize="12dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView_cross"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/bgcolor_heading"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"/>
+
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/listView1_men"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:dividerHeight="0dp">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/listView1_men"
+        android:layout_below="@+id/listView1_men"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_selector"
+        android:text="@string/submit"
+        android:textColor="@color/button_title_color"/>
+
+
+</RelativeLayout>

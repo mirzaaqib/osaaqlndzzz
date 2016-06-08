@@ -1,0 +1,20 @@
+{
+  "status": 200,
+  "stauts_message": "Record fetched",
+  "data": [
+    {
+      "BannerID": "12",
+      "BannerURL": "http://laundry.znsoftech.com/yii/uploads/banner/IMG_2015110903111615_4.jpg",
+      "BannerRedURL": "http//:www.google.com",
+      "BannerCaption": "Offer 10% Free",
+      "BannerPosition": "Top"
+    },
+    {
+      "BannerID": "14",
+      "BannerURL": "http://laundry.znsoftech.com/yii/uploads/banner/IMG_2015110707112915_1.jpg",
+      "BannerRedURL": "http//:www.google.com",
+      "BannerCaption": "banner image",
+      "BannerPosition": "Bottom"
+    }
+  ]
+}

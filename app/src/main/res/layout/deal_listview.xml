@@ -1,0 +1,131 @@
+<RelativeLayout
+    android:id="@+id/main_rel"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+    <!-- android:background="#2196f3"  -->
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/TextView_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LAUNDARIES IN "
+            android:textAllCaps="true"
+            android:textColor="@color/text_color"
+            android:textSize="13sp"/>
+
+
+        <Spinner
+            android:id="@+id/spinner_city"
+            android:layout_width="50dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/country_spn"
+            android:paddingLeft="100dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView_select_location"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+
+                android:layout_marginRight="10dp"
+                android:src="@drawable/country_selected_circle"/>
+
+            <ImageView
+                android:id="@+id/imageView_select_location2"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/country_selected_circle"/>
+
+            <ImageView
+                android:id="@+id/imageView_select_location3"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/country_selected_circle"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView_banner"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/list_row_background1"
+        android:scaleType="fitXY"/>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView_banner">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/deal_list_divider"/>
+
+            <ListView
+                android:id="@+id/listView1_men"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider"
+                android:dividerHeight="2dp"/>
+
+
+            <include layout="@layout/deals_divider1"/>
+
+            <ListView
+                android:id="@+id/listView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider"
+                android:dividerHeight="2dp">
+
+            </ListView>"
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

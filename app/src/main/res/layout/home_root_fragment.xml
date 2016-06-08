@@ -1,0 +1,31 @@
+<RelativeLayout
+    android:id="@+id/main_rel"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+    <TextView
+        android:id="@+id/current_city_universal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_bgcolor_light"
+        android:gravity="right|center"
+        android:paddingBottom="3dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp"
+        android:text="No city Selected"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+    <com.znsoftech.znsoftechlaundry.tabs.lib.TabPageIndicator2
+        android:id="@+id/mymusic_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:layout_below="@+id/current_city_universal"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mymusic_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mymusic_indicator"/>
+
+</RelativeLayout>
